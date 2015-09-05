@@ -14,14 +14,6 @@ class FabricarCoches: UIViewController {
 
     
     
-       
-    
-    @IBAction func crearCoche(sender: AnyObject) {
-        
-      
-    }
-    
-    
     @IBAction func mostrarPropiedadesCoche(sender: AnyObject) {
         
         println("El color del coche es \(jaguar?.colorCoche)")
@@ -30,15 +22,21 @@ class FabricarCoches: UIViewController {
     
     @IBAction func acelerarCoche(sender: AnyObject) {
         
+        println("Acelerar el Coche")
+        
         
         
     }
     
     
     @IBAction func frenarCoche(sender: AnyObject) {
+        
+        println("Frenar coche")
     }
     
     @IBAction func estacionarCoche(sender: AnyObject) {
+        
+        println("Actualmente estoy estacionando el coche")
     }
     
     
