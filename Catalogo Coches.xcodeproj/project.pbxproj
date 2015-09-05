@@ -14,6 +14,7 @@
 		B92E46D61B9A592000292397 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B92E46D41B9A592000292397 /* LaunchScreen.xib */; };
 		B92E46E21B9A592000292397 /* Catalogo_CochesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92E46E11B9A592000292397 /* Catalogo_CochesTests.swift */; };
 		B92E46EC1B9A626A00292397 /* modeloCocheNuevo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92E46EB1B9A626A00292397 /* modeloCocheNuevo.swift */; };
+		B9E784841B9B25E9009E703E /* CrearModeloCocheMini.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E784831B9B25E9009E703E /* CrearModeloCocheMini.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		B92E46E01B9A592000292397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B92E46E11B9A592000292397 /* Catalogo_CochesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catalogo_CochesTests.swift; sourceTree = "<group>"; };
 		B92E46EB1B9A626A00292397 /* modeloCocheNuevo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modeloCocheNuevo.swift; sourceTree = "<group>"; };
+		B9E784831B9B25E9009E703E /* CrearModeloCocheMini.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CrearModeloCocheMini.swift; path = ../CrearModeloCocheMini.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +81,14 @@
 		B92E46C81B9A591F00292397 /* Catalogo Coches */ = {
 			isa = PBXGroup;
 			children = (
+				B9E784831B9B25E9009E703E /* CrearModeloCocheMini.swift */,
 				B92E46CB1B9A591F00292397 /* AppDelegate.swift */,
 				B92E46CD1B9A591F00292397 /* FabricarCoches.swift */,
+				B92E46EB1B9A626A00292397 /* modeloCocheNuevo.swift */,
 				B92E46CF1B9A591F00292397 /* Main.storyboard */,
 				B92E46D21B9A592000292397 /* Images.xcassets */,
 				B92E46D41B9A592000292397 /* LaunchScreen.xib */,
 				B92E46C91B9A591F00292397 /* Supporting Files */,
-				B92E46EB1B9A626A00292397 /* modeloCocheNuevo.swift */,
 			);
 			path = "Catalogo Coches";
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B92E46CE1B9A591F00292397 /* FabricarCoches.swift in Sources */,
+				B9E784841B9B25E9009E703E /* CrearModeloCocheMini.swift in Sources */,
 				B92E46CC1B9A591F00292397 /* AppDelegate.swift in Sources */,
 				B92E46EC1B9A626A00292397 /* modeloCocheNuevo.swift in Sources */,
 			);
@@ -413,6 +417,7 @@
 				B92E46E71B9A592000292397 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B92E46E81B9A592000292397 /* Build configuration list for PBXNativeTarget "Catalogo CochesTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +426,7 @@
 				B92E46EA1B9A592000292397 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

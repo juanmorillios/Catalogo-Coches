@@ -22,20 +22,14 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QG1-xo-SKZ">
-                                <rect key="frame" x="96" y="118" width="128" height="30"/>
-                                <state key="normal" title="Mostrar propiedad">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="mostrarPropiedadesCoche:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jln-ab-3F5"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2W-cC-Q8D">
                                 <rect key="frame" x="132" y="187" width="57" height="30"/>
                                 <state key="normal" title="Acelerar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="132" y="234" width="57" height="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="acelerarCoche:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ozl-8n-Mlb"/>
                                 </connections>
@@ -45,6 +39,9 @@
                                 <state key="normal" title="Frenar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="138" y="272" width="44" height="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="frenarCoche:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="heF-qm-wUB"/>
                                 </connections>
@@ -54,6 +51,9 @@
                                 <state key="normal" title="Estacionar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="124" y="310" width="73" height="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="estacionarCoche:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3G4-UA-N38"/>
                                 </connections>
@@ -69,9 +69,46 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="95" y="205" width="130" height="21"/>
+                                </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QG1-xo-SKZ">
+                                <rect key="frame" x="96" y="118" width="128" height="30"/>
+                                <state key="normal" title="Mostrar propiedades Jaguar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="63" y="118" width="194" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="mostrarPropiedadesCoche:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jln-ab-3F5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cjr-ct-Qed">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Mostrar propiedades BWM">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="68" y="167" width="185" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="mostrarPropiedadesBMW:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6Mh-04-Uya"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Cjr-ct-Qed"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Cjr-ct-Qed"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>

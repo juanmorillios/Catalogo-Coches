@@ -8,22 +8,37 @@
 
 import UIKit
 
-var jaguar:crearCocheNuevo?
+
 
 class FabricarCoches: UIViewController {
-
     
+    var modeloCocheNuevo?
+
+    //Creamos el coche jaguar a partir de la clase crearCocheNuevo, asi heredamos todas las propiedades de un coche.
+    
+    var jaguar:crearCocheNuevo?
+    var bmw:crearCocheNuevo?
+    
+    //Mostramos por consola las proiedades del coche
     
     @IBAction func mostrarPropiedadesCoche(sender: AnyObject) {
         
-        println("El color del coche es \(jaguar?.colorCoche)")
+        println("El color del coche es \(jaguar!.colorCoche)")
+        println("El modelo del coche es \(jaguar!.modeloCoche)")
+        println("Total Ruedas  del coche es \(jaguar!.numeroRuedas)")
+        println("Capacidad pasajero del coche es \(jaguar!.numeroPasajero)")
     }
     
+    @IBAction func mostrarPropiedadesBMW(sender: AnyObject) {
+        
+        println("El color del coche es \(bmw!.colorCoche)")
+        
+        
+    }
     
     @IBAction func acelerarCoche(sender: AnyObject) {
         
-        println("Acelerar el Coche")
-        
+      //Llamamos la función acelerar
         
         
     }
@@ -31,12 +46,13 @@ class FabricarCoches: UIViewController {
     
     @IBAction func frenarCoche(sender: AnyObject) {
         
-        println("Frenar coche")
+      //Llamamos la función frenarCoche
     }
     
     @IBAction func estacionarCoche(sender: AnyObject) {
         
-        println("Actualmente estoy estacionando el coche")
+       //Llamamos la función estacionarCoche
+        
     }
     
     
@@ -45,8 +61,14 @@ class FabricarCoches: UIViewController {
         super.viewDidLoad()
         
         
+        //Creamos el nuevo modelo de coche heredando las propiedades de la fábrica de coches
          jaguar = crearCocheNuevo()
-        println("He creado el objeto")
+        
+        //Sacamos poe consola el mensaje de que el objeto coche se ha creado
+        println("He creado el objeto crear coche")
+        
+       
+      
         
         
     }

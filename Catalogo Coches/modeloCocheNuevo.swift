@@ -18,21 +18,21 @@ class crearCocheNuevo {
 
 func acelerarCoche(){
     
-    print("Estoy acelerando el coche")
+    println("Estoy acelerando el coche")
     
     
 }
 
 func frenarCoche(){
     
-    print("Estoy frenando el coche")
+    println("Estoy frenando el coche")
     
     
 }
 
 func estacionarCoche(){
     
-    print("Estacionando el coche")
+    println("Estacionando el coche")
     
     
 }
