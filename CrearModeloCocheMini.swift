@@ -8,6 +8,12 @@
 
 import Foundation
 
-class modeloCocheNuevoBMW:modeloCocheNuevo {
+class modeloCocheNuevoBMW:FabricarCoches {
+    
+    func estacionar(){
+    
+        println("Estacionando coche")
+    
+    }
     
 }

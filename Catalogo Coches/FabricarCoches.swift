@@ -12,7 +12,7 @@ import UIKit
 
 class FabricarCoches: UIViewController {
     
-    var modeloCocheNuevo?
+    var modeloCocheNuevo;?
 
     //Creamos el coche jaguar a partir de la clase crearCocheNuevo, asi heredamos todas las propiedades de un coche.
     
